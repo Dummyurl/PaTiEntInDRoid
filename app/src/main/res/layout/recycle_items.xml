@@ -1,0 +1,108 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <ImageView android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_marginLeft="16dp"
+               android:layout_marginRight="16dp"
+               android:layout_centerVertical="true"
+               android:id="@+id/thumbnail_image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@id/thumbnail_image"
+        android:layout_toLeftOf="@+id/active_image"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/recycle_title"
+            android:layout_width="match_parent"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            tools:text="Title"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/med_names"
+            android:layout_width="match_parent"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/dose_type"
+            android:layout_width="match_parent"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            />
+
+
+        <TextView
+            android:id="@+id/recycle_date_time"
+            android:layout_width="match_parent"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            tools:text="Date"/>
+
+        <TextView
+            android:id="@+id/recycle_time"
+            android:layout_width="match_parent"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            tools:text="Times"/>
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="16dp"
+               android:layout_marginRight="16dp"
+               android:src="@drawable/ic_notifications_off_grey600_24dp"
+               android:layout_centerVertical="true"
+               android:id="@+id/active_image"/>
+
+
+
+</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#f1f1f1"
+        android:layout_height="2dp"/>
+
+
+    </LinearLayout>

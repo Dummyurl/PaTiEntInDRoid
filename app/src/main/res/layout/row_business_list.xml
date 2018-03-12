@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:scaleType="centerCrop"
+    android:id="@+id/imageView"/>
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+
+        android:background="#6c000000">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:textColor="#ffffff"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:paddingLeft="15dp"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:shadowColor="#000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/subTitle"
+                android:textColor="#ffffff"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:paddingLeft="15dp"
+                android:textSize="12dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_marginRight="100dp"
+                android:layout_centerVertical="true"
+                android:shadowColor="#000000"/>
+        </LinearLayout>
+
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/foodRatingBar"
+            android:isIndicator="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</FrameLayout>

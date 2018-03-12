@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ziffytech">
+
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.CAMERA"></uses-permission>
+<uses-feature android:name="android.hardware.camera"></uses-feature>
+
+
+<application android:name=".activities.MyApplication" android:allowBackup="true" android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name" tools:replace="android:icon" android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCqoNhgryOjc69lv1GJwk1_PpeWoz5370A" />
+
+    <service android:name=".configfcm.MyFirebaseMessagingService">
+        <intent-filter>
+            <action android:name="com.google.firebase.MESSAGING_EVENT" />
+        </intent-filter>
+    </service>
+    <service android:name=".configfcm.MyFirebaseInstanceIDService">
+        <intent-filter>
+            <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+        </intent-filter>
+    </service>
+    <!--
+     Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+    <meta-data android:name="com.google.firebase.messaging.default_notification_icon"
+        android:resource="@drawable/ic_notification" />
+    <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+    <meta-data android:name="com.google.firebase.messaging.default_notification_color"
+        android:resource="@color/colorAccent" />
+
+    <activity android:configChanges="orientation|screenSize" android:name=".activities.MainActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+
+    </activity>
+    <activity android:name=".activities.MapActivity" />
+    <activity android:name=".activities.ListActivity" android:windowSoftInputMode="stateHidden"
+        android:configChanges="orientation|screenSize" />
+    <activity android:name=".activities.DetailsSalonActivity" android:configChanges="orientation|screenSize"
+        android:theme="@style/AppTheme.NoActionBar" />
+
+    <activity android:name=".activities.DetailsConsulationActivity"
+        android:configChanges="orientation|screenSize" />
+
+    <activity android:name=".activities.ForgotPassword" android:windowSoftInputMode="stateHidden"
+        android:configChanges="orientation|screenSize" />
+
+
+    <activity android:name=".activities.TimeSlotActivity" android:windowSoftInputMode="stateHidden"
+
+        android:configChanges="orientation|screenSize" />
+    <activity android:name=".activities.ThanksActivity" android:configChanges="orientation|screenSize" />
+    <activity android:name=".activities.PersonInfoActivity" android:windowSoftInputMode="stateHidden"
+
+        android:configChanges="orientation|screenSize" />
+    <activity android:name=".activities.LoginActivity" android:windowSoftInputMode="stateHidden"
+        android:configChanges="orientation|screenSize" />
+    <activity android:name=".activities.RegisterActivity" android:windowSoftInputMode="stateHidden"
+
+        android:configChanges="orientation|screenSize" />
+    <activity android:name=".activities.UpdateProfileActivity" android:windowSoftInputMode="stateHidden"
+        android:configChanges="orientation|screenSize" />
+    <activity android:name=".activities.ChangePasswordActivity" android:windowSoftInputMode="stateHidden"
+
+        android:configChanges="orientation|screenSize" />
+    <activity android:name=".activities.MyAppointmentsActivity" android:windowSoftInputMode="stateHidden"
+
+        android:configChanges="orientation|screenSize" />
+    <activity android:name=".activities.SearchActivity"
+        android:configChanges="orientation|screenSize" />
+    <activity android:name=".activities.LocationActivity" android:configChanges="orientation|screenSize" />
+    <activity android:name=".activities.FindDoctorActivity"
+
+        android:windowSoftInputMode="stateHidden"
+
+        android:configChanges="orientation|screenSize" />
+
+    <activity android:name=".activities.MedicineOrderActivity" android:windowSoftInputMode="stateHidden"
+
+        android:configChanges="orientation|screenSize" />
+
+    <activity android:name=".activities.MedicineOrderAdressActivity" android:windowSoftInputMode="stateHidden"
+
+        android:configChanges="orientation|screenSize" />
+
+    <activity android:name=".activities.RemainderActivity" android:windowSoftInputMode="stateHidden"
+
+        android:configChanges="orientation|screenSize" />
+
+    <activity android:name=".activities.MedicalRecords" android:windowSoftInputMode="stateHidden"
+        android:screenOrientation="portrait" android:configChanges="orientation" />
+
+    <activity android:name=".activities.ChatActivity" android:windowSoftInputMode="stateHidden"
+        android:screenOrientation="portrait" android:configChanges="orientation" />
+
+
+    <activity android:name=".activities.QuestionReplies" android:windowSoftInputMode="stateHidden"
+        android:screenOrientation="portrait" android:configChanges="orientation" />
+
+
+    <activity android:name=".activities.BookActivity" android:windowSoftInputMode="stateHidden"
+        android:configChanges="orientation|screenSize" />
+
+    <activity android:name=".activities.ProfileActivity" android:windowSoftInputMode="stateHidden"
+        android:configChanges="orientation|screenSize" />
+
+    <activity android:name=".alarm.AlarmMe" android:configChanges="orientation|screenSize" />
+    <activity android:name=".activities.RelativeProfile" android:windowSoftInputMode="stateHidden"
+        android:screenOrientation="portrait" android:configChanges="orientation" />
+
+    <activity android:name=".activities.AddMember" android:windowSoftInputMode="adjustPan"
+        android:screenOrientation="portrait" android:configChanges="orientation" />
+
+
+    <activity android:name=".alarm.EditAlarm" android:windowSoftInputMode="stateHidden"
+        android:configChanges="orientation|screenSize" android:label="Edit alarm" />
+    <activity android:name=".alarm.AlarmNotification" android:windowSoftInputMode="stateHidden"
+
+        android:configChanges="orientation|screenSize" android:label="Alarm Notification" />
+    <activity android:name=".alarm.Preferences" android:configChanges="orientation|screenSize"
+        android:label="Preferences" />
+    <activity android:name=".alarm.About" android:configChanges="orientation|screenSize"
+        android:label="About" />
+
+
+    <activity android:name=".activities.SocialLoginActivity" android:configChanges="orientation|screenSize"
+        android:label="Social Login"
+
+    />
+    <activity android:name=".activities.PersonalDetailsActivity" android:windowSoftInputMode="adjustPan"
+        android:screenOrientation="portrait" android:configChanges="orientation"
+        android:label="PersonalDetailsActivity" />
+
+    <activity android:name=".activities.AskQuestionActiivty" android:windowSoftInputMode="adjustPan"
+        android:screenOrientation="portrait" android:configChanges="orientation"
+        android:label="PersonalDetailsActivity" />
+
+    <activity android:name=".activities.AddQuestionActivity" android:windowSoftInputMode="adjustPan"
+        android:screenOrientation="portrait" android:configChanges="orientation"
+        android:label="PersonalDetailsActivity" />
+
+    <activity android:name=".activities.MedicationActivity" android:windowSoftInputMode="adjustPan"
+        android:screenOrientation="portrait" android:configChanges="orientation"
+        android:label="PersonalDetailsActivity" />
+
+    <activity android:name=".activities.MedicationAddActivity" android:windowSoftInputMode="adjustPan"
+        android:screenOrientation="portrait" android:configChanges="orientation"
+        android:label="PersonalDetailsActivity" />
+
+
+    <activity android:name=".activities.MyDoctorsActivity" android:windowSoftInputMode="adjustPan"
+        android:screenOrientation="portrait" android:configChanges="orientation"
+        android:label="PersonalDetailsActivity" />
+
+    <activity android:name=".activities.DoctorMainCategoriesActivity"
+        android:windowSoftInputMode="adjustPan"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation"
+        android:label="PersonalDetailsActivity" />
+
+    <activity android:name=".activities.AskQuestionDetails"
+        android:windowSoftInputMode="adjustResize"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation"
+         />
+
+
+    <activity android:name=".chat.UserChatActivity"
+        android:windowSoftInputMode="adjustResize"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation"
+        />
+
+
+    <activity android:name=".activities.SplashActivity" android:configChanges="orientation|screenSize">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity android:name=".activities.PaymentActivity" android:configChanges="orientation|screenSize">
+
+    </activity>
+    <activity android:name=".activities.LifeStyleActivity" android:windowSoftInputMode="adjustPan"
+        android:screenOrientation="portrait" android:configChanges="orientation" />
+
+    <activity android:name=".activities.MedicalDetails" android:windowSoftInputMode="adjustPan"
+        android:screenOrientation="portrait" android:configChanges="orientation" />
+
+
+    <receiver android:name=".alarm.AlarmReceiver" android:process=":remote" />
+
+    <receiver android:name=".alarm.BootCompletedReceiver">
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </receiver>
+
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
+
+    <activity android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+        android:label="@string/app_name" />
+
+    <provider android:name=".chat.DataProvider" android:authorities="com.ziffytech.provider"
+        android:exported="false" />
+
+    <activity android:name=".remainder.ReminderAddActivity"
+        android:label="@string/title_activity_add_reminder"/>
+
+    <activity android:name=".remainder.ReminderEditActivity"
+        android:label="@string/title_activity_edit_reminder"/>
+
+    <activity android:name=".remainder.RemainderActivity" android:windowSoftInputMode="adjustPan"
+        android:screenOrientation="portrait" android:configChanges="orientation" />
+
+    <activity android:name=".activities.ActivityViewImager" android:windowSoftInputMode="adjustPan"
+        android:screenOrientation="portrait" android:configChanges="orientation" />
+
+
+    <receiver android:name=".remainder.AlarmReceiver"/>
+
+    <receiver android:name=".remainder.BootReceiver">
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED"/>
+        </intent-filter>
+    </receiver>
+
+
+
+</application>
+
+</manifest>

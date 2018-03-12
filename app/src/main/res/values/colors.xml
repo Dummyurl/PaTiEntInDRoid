@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    <color name="colorPrimary">#3dcdad</color>
+    <color name="colorPrimaryDark">#23bc9a</color>
+    <color name="colorAccent">#23bc9a</color>
+
+    -->
+
+    <color name="colorPrimary">#d34836</color>
+    <color name="colorPrimaryDark">#dfd34836</color>
+    <color name="colorAccent">#ded34836</color>
+
+
+    <color name="colorTagBg">#e5e5e5</color>
+    <color name="colorTextWhite">#ffffff</color>
+    <color name="colorTextDark">#484848</color>
+    <color name="colorTextDarkGray">#787878</color>
+    <color name="black_dark">#FF000000</color>
+
+    <color name="bg_msg_from">#FF0099ff</color>
+    <color name="bg_msg_you">#e5e7eb</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="light_grey">#aaaaaa</color>
+    <color name="grey">#888888</color>
+    <color name="dark_grey">#555555</color>
+
+    <color name="alarm_title_active">#444444</color>
+    <color name="alarm_title_outdated">#888888</color>
+    <color name="alarm_details">#888888</color>
+
+    <color name="litegrey">#f1f1f1</color>
+
+    <color name="itemselected">#f1f1f1</color>
+    <color name="login_hover">#f1f1f1</color>
+    <color name="sign_out_color">#f1f1f1</color>
+    <color name="typing">#0099ff</color>
+    <color name="no_typing">#696969</color>
+    <color name="transparent">#88000000</color>
+
+    <color name="primary">#37474f</color>
+    <color name="primary_dark">#263238</color>
+    <color name="accent">#78909c</color>
+    <color name="control_normal">#888888</color>
+    <color name="fab_pressed">#546e7a</color>
+
+</resources>

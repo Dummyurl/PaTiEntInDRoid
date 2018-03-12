@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_above="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Occupation"
+                android:textColor="@color/grey"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_gravity="center"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:editable="false"
+                android:id="@+id/occupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:hint="Occupation"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Smoking per day"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/grey"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:layout_gravity="center"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:id="@+id/Smoking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:hint="Smoking"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Alcohol Consumption"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/grey"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:editable="false"
+                android:layout_gravity="center"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:id="@+id/Alcohol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:hint="Alcohol Consumption"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Activity Level"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/grey"
+                android:layout_height="wrap_content" />
+
+
+
+            <EditText
+                android:editable="false"
+                android:layout_gravity="center"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:id="@+id/Activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:hint="Activity Level"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Food Preferences"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/grey"
+                android:layout_height="wrap_content" />
+
+
+
+            <EditText
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:editable="false"
+                android:cursorVisible="false"
+                android:id="@+id/food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:hint="Food Preferences"
+                android:textSize="18sp" />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+     <!--   <Button
+            android:layout_marginRight="1dp"
+            android:id="@+id/skip"
+            android:layout_alignParentBottom="true"
+            android:text="skip"
+            android:layout_weight="1"
+            android:textColor="@color/colorTextWhite"
+            android:background="@drawable/xml_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+            -->
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/submit"
+            android:layout_alignParentBottom="true"
+            android:text="Get Started"
+            android:textColor="@color/colorTextWhite"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/parent"
+    android:layout_height="match_parent"
+    xmlns:emojicon="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+    android:layout_above="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        />
+
+    <fragment
+        android:name="com.ziffytech.chat.MessageList"
+        android:id="@+id/msg_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+   </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#88000000" >
+
+        <RelativeLayout
+            android:id="@+id/send_ll"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:id="@+id/send_btn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_send"
+            android:background="@drawable/borderlineleft"
+            android:text="Send" />
+
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/smile_btn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/my_chat_s"
+            android:background="@drawable/border_right"
+            android:text="Send" />
+
+        <github.ankushsachdeva.emojicon.EmojiconEditText
+            android:id="@+id/msg_edit"
+            android:hint="Your response..."
+            android:background="@null"
+            android:paddingLeft="6dp"
+            emojicon:emojiconSize="34sp"
+            android:minLines="2"
+            android:maxLines="6"
+            android:inputType="textMultiLine"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/smile_btn"
+            android:layout_toLeftOf="@+id/send_btn">
+
+        </github.ankushsachdeva.emojicon.EmojiconEditText>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

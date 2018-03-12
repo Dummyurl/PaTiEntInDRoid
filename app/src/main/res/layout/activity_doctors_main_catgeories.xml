@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_margin="30dp"
+                android:clickable="true"
+                android:id="@+id/search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_shadow">
+                <EditText
+                    android:id="@+id/editSearch"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Search by Doctor and Clinic"
+                    android:textColor="@color/colorTextDarkGray"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    />
+                <!--<ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/places_ic_search"/>-->
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:text="Find &amp; Book"
+                android:layout_height="wrap_content" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/list"
+                android:clipToPadding="true"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llDoctors"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="vertical"
+                android:background="#f1f1f1"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/icon_doctor" />
+
+                    <LinearLayout
+                        android:layout_toRightOf="@id/img"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:background="#f1f1f1"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="17sp"
+                            android:text="Doctors"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/darker_gray" />
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llDentist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="vertical"
+                    android:background="#f1f1f1"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/icon_therapy" />
+
+                        <LinearLayout
+                            android:layout_toRightOf="@id/img1"
+                            android:layout_width="match_parent"
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:background="#f1f1f1"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textSize="17sp"
+                                android:text="Dentists"
+                                android:textColor="@android:color/black" />
+
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="17sp"
+                                android:textColor="@android:color/darker_gray" />
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llAlternative"
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:background="#f1f1f1"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/icon_alternative" />
+
+                        <LinearLayout
+                            android:layout_toRightOf="@id/img2"
+                            android:layout_width="match_parent"
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:background="#f1f1f1"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textSize="17sp"
+                                android:text="Alternative Medicine Doctors"
+                                android:textColor="@android:color/black" />
+
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="17sp"
+                                android:textColor="@android:color/darker_gray" />
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llther"
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:background="#f1f1f1"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="40dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/icon_therapy" />
+
+                        <LinearLayout
+                            android:layout_toRightOf="@id/img2"
+                            android:layout_width="match_parent"
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:background="#f1f1f1"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textSize="17sp"
+                                android:text="Therapists &amp; Nutritionists"
+                                android:textColor="@android:color/black" />
+
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="17sp"
+                                android:textColor="@android:color/darker_gray" />
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

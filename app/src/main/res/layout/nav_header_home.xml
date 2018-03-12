@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:background="#e5e5e5"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/menu_title"
+        android:src="@drawable/ziffytech"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        />
+
+    <TextView
+        android:id="@+id/txtFullName"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textEmailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#484848"
+        />
+
+</LinearLayout>

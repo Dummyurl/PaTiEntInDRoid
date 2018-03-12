@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/litegrey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <com.ziffytech.util.RoundedImageView
+            android:adjustViewBounds="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="60dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_marginTop="10dp"
+            android:text="Mahesh Bhople"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_marginTop="5dp"
+            android:text="maheshbhople@gmail.com"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnpersonalDetails"
+            android:paddingLeft="10dp"
+            android:drawableRight="@drawable/ic_list_11"
+            android:gravity="left|center"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:text="Personal Details"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnMedicalDetails"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:drawableRight="@drawable/ic_list_11"
+            android:gravity="left|center"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:text="Medical Details"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/btnLifeStyleDetails"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:drawableRight="@drawable/ic_list_11"
+            android:gravity="left|center"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:text="Lifestyle Details"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/btnFamilyMebers"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:drawableRight="@drawable/ic_list_11"
+            android:gravity="left|center"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:text="Family Members"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/btnMedication"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:drawableRight="@drawable/ic_list_11"
+            android:gravity="left|center"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:text="Medication"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/btnUpdateProfile"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:drawableRight="@drawable/ic_list_11"
+            android:gravity="left|center"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:text="Update Profile"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

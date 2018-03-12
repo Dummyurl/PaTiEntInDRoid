@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:background="@drawable/edittext_shadow">
+   <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <com.ziffytech.util.RoundedImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/lltitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@+id/rating"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:id="@+id/title"
+                android:textSize="17sp"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_below="@+id/lltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/degree"
+            android:textSize="@dimen/text_small"/>
+
+        <TextView
+            android:layout_below="@+id/degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/specilaity"
+            android:textSize="@dimen/text_small"/>
+
+
+        <TextView
+            android:layout_below="@+id/specilaity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clinic"
+            android:textSize="@dimen/text_small"/>
+
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+     <RelativeLayout
+        android:layout_below="@id/rtbProductRating"
+        android:layout_width="match_parent"
+         android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/book"
+            android:clickable="false"
+            android:layout_width="150dp"
+            android:text="Start Chat"
+            android:textColor="#fff"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/xml_button"
+            android:layout_alignParentRight="true"
+            android:layout_height="35dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

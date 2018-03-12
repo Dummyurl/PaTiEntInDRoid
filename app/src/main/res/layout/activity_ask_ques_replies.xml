@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#e5e5e5"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:background="#e5e5e5"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        >
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="10dp"
+                android:background="@color/white"
+                android:layout_toRightOf="@+id/productImage"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/title"
+                        android:maxLines="1"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/desc"
+                        android:maxLines="1"
+                        android:textSize="17sp"
+                        android:textStyle="italic"
+                        android:textColor="#ccc"
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="match_parent"
+                        android:id="@+id/doctorName"
+                        android:maxLines="1"
+                        android:textSize="17sp"
+                        android:textColor="#ccc"
+                        android:textStyle="italic"
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content" />
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/chatload"
+                    android:layout_margin="10dp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_below="@+id/top"
+        android:layout_margin="5dp"
+        android:id="@+id/messagesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_above="@+id/footer"
+        android:listSelector="@android:color/transparent"
+        android:transcriptMode="alwaysScroll"
+        android:divider="@null" />
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/send_btn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="4dp"
+            android:src="@drawable/forward"
+            android:textColor="@color/white"
+            android:background="@color/white"
+            />
+
+        <EditText
+            android:id="@+id/msg_edit"
+            android:hint="Your response..."
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingLeft="6dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/send_btn"
+            android:layout_toLeftOf="@+id/send_btn" >
+
+        </EditText>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

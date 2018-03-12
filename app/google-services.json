@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "22159060651",
+    "firebase_url": "https://ziffytech-191911.firebaseio.com",
+    "project_id": "ziffytech-191911",
+    "storage_bucket": "ziffytech-191911.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22159060651:android:5842c71b118a8867",
+        "android_client_info": {
+          "package_name": "com.ziffytech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22159060651-da0v4u4tnmrm3k983fghf9a92rld4di9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ziffytech",
+            "certificate_hash": "2e1d028e48a09389a83e5d222120fee13ba036d0"
+          }
+        },
+        {
+          "client_id": "22159060651-emi7evqk4b53umi3dtnjhms31mpqqp4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT4pjUWPwg1zU8DfQHiUDUQTGPja2voQE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22159060651-emi7evqk4b53umi3dtnjhms31mpqqp4o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

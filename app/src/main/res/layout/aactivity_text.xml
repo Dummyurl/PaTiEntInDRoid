@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:text="नमस्ते दुनिया"
+        android:gravity="center"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btnSpeak"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:text="Speak"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

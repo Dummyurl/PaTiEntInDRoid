@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/selected_transparent"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"    >
+
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="23 Feb 2016"
+        android:padding="8dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/chat_date"
+        android:background="@drawable/bg_date"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+    <RelativeLayout
+        android:layout_below="@+id/chat_date"
+        android:id="@+id/chat_layout_friend"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:minWidth="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/image_f"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <com.ziffytech.util.RoundedImageView
+                android:layout_width="45dp"
+                android:visibility="gone"
+                android:id="@+id/friend_profile_image"
+                android:layout_marginTop="13dp"
+                android:layout_centerVertical="true"
+                android:layout_height="45dp" />
+
+
+        </RelativeLayout>
+        <!-- TXT-->
+        <LinearLayout
+        android:layout_toRightOf="@+id/image_f"
+        android:id="@+id/chat_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bg_msg_you"
+        android:padding="6dp"
+        android:paddingBottom="6dp"
+        android:orientation="vertical">
+
+            <!-- TXT-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <github.ankushsachdeva.emojicon.EmojiconTextView
+                    android:id="@+id/chat_msg_friend"
+                    android:padding="2dp"
+                    android:text="Message"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <!-- Image-->
+
+            <RelativeLayout
+
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/msgImage_f"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="1dp"
+                    />
+                <ProgressBar
+                    android:id="@+id/progressBarImage_f"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+            <!--Stream-->
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/msgImagestream_f"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="1dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/stream_play_f"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/transparent_circle"
+                    android:layout_centerInParent="true"
+                    android:layout_width="50dp"
+                    android:src="@drawable/ic_fab_play"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/chat_msg_time_friend"
+            android:text="2:30 PM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_gravity="right"
+        />
+
+
+    </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/chat_date"
+        android:id="@+id/chat_layout_me"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:minWidth="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="-6dp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/my_layout"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+
+            <com.ziffytech.util.RoundedImageView
+                android:visibility="gone"
+                android:layout_width="45dp"
+                android:id="@+id/user_profile_image"
+                android:layout_marginTop="13dp"
+                android:layout_centerVertical="true"
+                android:layout_height="45dp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_toLeftOf="@+id/my_layout"
+            android:id="@+id/my_layout_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="6dp"
+            android:paddingBottom="6dp"
+            android:orientation="vertical">
+
+            <!-- TXT-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <github.ankushsachdeva.emojicon.EmojiconTextView
+                    android:id="@+id/chat_msg_me"
+                    android:padding="2dp"
+                    android:text="Message"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <!-- Image-->
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/msgImage"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="1dp"
+                    />
+                <ProgressBar
+                    android:id="@+id/progressBarImage"
+                    android:layout_width="100dp"
+                    android:layout_centerInParent="true"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_height="10dp" />
+
+
+
+
+            </RelativeLayout>
+
+            <!--Stream-->
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/msgImagestream"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="1dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/stream_play"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/transparent_circle"
+                    android:layout_centerInParent="true"
+                    android:layout_width="50dp"
+                    android:src="@drawable/ic_fab_play"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/chat_msg_time_me"
+                android:text="2:30 PM"
+                android:textSize="12dp"
+                android:drawablePadding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="center|right"
+                 />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

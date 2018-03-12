@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llmain"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_2">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"
+                android:hint="Enter Title"
+                android:id="@+id/txtTitle" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"
+                android:hint="Enter Description"
+                android:id="@+id/txtDesc" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/llbtn"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/imageview"
+            android:visibility="visible"
+            android:src="@drawable/ic_image_placeholder"
+            android:layout_gravity="center"
+            android:text="Click here to upload Doctor prescription"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+
+
+        <TextView
+            android:layout_toRightOf="@+id/imageview"
+            android:textSize="19sp"
+            android:layout_margin="30dp"
+            android:id="@+id/text"
+            android:layout_gravity="left"
+            android:text="Click here to select record photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_alignParentBottom="true"
+        android:text="UPLOAD"
+        android:textColor="@color/colorTextWhite"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

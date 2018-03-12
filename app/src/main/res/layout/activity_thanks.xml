@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/litegrey"
+    tools:context="com.ziffytech.activities.ThanksActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:text="Patient Information"
+                    android:layout_height="wrap_content" />
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="5dp"
+                    android:elevation="5dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/patientName"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/age"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/gender"
+                            android:textStyle="italic"
+                            android:textColor="@color/grey"
+                            android:textSize="17sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/addMember"
+                            android:textColor="@color/black"
+                            android:text="+ BOOK FOR FAMILY MEMBER "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:text="Booking Information"
+                    android:layout_height="wrap_content" />
+
+
+
+                    <FrameLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                        <LinearLayout
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:layout_marginTop="40dp"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_marginTop="40dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/clinicName"
+                                        android:textStyle="bold"
+                                        android:textAllCaps="true"
+                                        android:textSize="15sp"
+                                        android:textColor="@color/black"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:id="@+id/doctorName"
+                                        android:textStyle="bold"
+                                        android:textSize="14sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+
+
+                            <TextView
+                                android:id="@+id/bookedDate"
+                                android:textStyle="italic"
+                                android:textColor="@color/grey"
+                                android:textSize="14sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/bookedTime"
+                                android:textStyle="italic"
+                                android:textColor="@color/grey"
+                                android:textSize="14sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+
+                        </LinearLayout>
+
+
+                        <com.ziffytech.util.RoundedImageView
+                            android:layout_width="80dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/doctorImage"
+                            android:layout_height="80dp" />
+
+
+                    </FrameLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/confirm"
+            android:textColor="@color/white"
+            android:text="CONFIRM &amp; BOOK APPOINTMENT"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

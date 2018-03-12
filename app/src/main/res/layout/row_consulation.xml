@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_10">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_10">
+<ImageView
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:id="@+id/imageView"
+    android:scaleType="centerCrop"
+    android:layout_gravity="center_horizontal"
+    android:src="@drawable/ic_blank"
+    android:layout_marginRight="10dp"
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textStyle="bold"
+        android:id="@+id/title"
+        android:textSize="@dimen/text_normal"/>
+        <TextView
+            android:layout_below="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/degree"
+            android:textSize="@dimen/text_small"/>
+
+        <RatingBar
+            android:layout_below="@id/degree"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:layout_marginTop="5dp"
+            android:id="@+id/rtbProductRating"
+            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:numStars="5"
+            android:transformPivotX="0dp"
+            android:transformPivotY="0dp"
+            android:rating="4"
+            />
+
+        <RelativeLayout
+            android:layout_below="@id/rtbProductRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/book"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:text="Ask Question"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:layout_alignParentRight="true"
+                android:layout_height="34dp" />
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/book"
+                android:layout_width="wrap_content"
+                android:text="Charges : 100-200"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="#ccc"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

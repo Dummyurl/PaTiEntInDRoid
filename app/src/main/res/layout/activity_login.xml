@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:orientation="vertical" >
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_2">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:inputType="textEmailAddress"
+                android:hint="@string/signin_emailaddress"
+                android:id="@+id/txtEmail" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:inputType="textPassword"
+                android:hint="@string/signin_password"
+                android:id="@+id/txtPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/login_now"
+                android:id="@+id/button"
+                android:textColor="@color/colorTextWhite"
+                android:background="@drawable/xml_button"
+                />
+            <Button
+                android:text="@string/register_new"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/xml_button"
+                android:id="@+id/buttonRegister"
+                android:onClick="registerClick"
+                android:textColor="@color/colorTextWhite"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:text="@string/signin_forgotmypassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:id="@+id/button4"
+                android:textStyle="italic"
+                android:onClick="forgotPassword"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        >
+        <com.facebook.login.widget.LoginButton
+            android:visibility="gone"
+            android:id="@+id/login_button"
+            android:layout_weight="0.5"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/g_login"
+            android:visibility="gone"
+            android:layout_weight="0.5"
+            android:layout_marginTop="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.gms.common.SignInButton>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:background="#E0E0E0"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:text="OR SIGN IN WITH"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/fb"
+                android:layout_width="0dp"
+                android:background="@drawable/fb_button"
+                android:text="Facebook"
+                android:paddingLeft="10dp"
+                android:drawableLeft="@drawable/fb"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_height="40dp" />
+
+            <Button
+                android:id="@+id/gp"
+                android:paddingLeft="10dp"
+                android:drawableLeft="@drawable/gp"
+                android:background="@drawable/gp_button"
+                android:text="Google"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:layout_height="40dp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
